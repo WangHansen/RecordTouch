@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".RecordTouch"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+
+    <TextView
+        android:id="@+id/touchRecord"
+
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromEdgeReport"
+        android:minWidth="200dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:width="50dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/timeReport"
+        android:layout_toStartOf="@+id/timeReport" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeReport"
+        android:background="@android:drawable/alert_light_frame"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#f12222"
+        android:layout_marginRight="108dp"
+        android:layout_marginEnd="108dp"
+        android:layout_alignBottom="@+id/fromEdgeReport"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/timerClick"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/timeReport"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:onClick="timerClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Distance: "
+        android:id="@+id/finalDistanceOutput"
+        android:layout_below="@+id/timerClick"
+        android:layout_alignLeft="@+id/fromEdgeReport"
+        android:layout_alignStart="@+id/fromEdgeReport"
+        android:layout_marginTop="48dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:width="200dp" />
+
+</RelativeLayout>

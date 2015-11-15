@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rowan.MainMenu"
+
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backGround"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/mainmenu_converted"></TextView>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/hand"
+        android:background="@drawable/hand"
+        android:layout_above="@+id/play"
+        android:layout_alignLeft="@+id/play"
+        android:layout_alignStart="@+id/play" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:id="@+id/play"
+        android:background="@drawable/play"
+        android:onClick="generateClick"
+        android:allowUndo="true"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/broken"
+        android:layout_alignStart="@+id/broken" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/broken"
+        android:background="@drawable/broke"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:onClick="generateClick2" />
+
+
+</RelativeLayout>
